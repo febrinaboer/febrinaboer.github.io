@@ -1,0 +1,26 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Fibina Studio'
+theme = 'hugo-creative-portfolio-theme'
+
+[params]
+    style = 'default'
+    description = 'lorem ipsum'
+
+    # Nav links in the side bar
+    [[params.navlinks]]
+    name = "Home"
+    url = "portfolio/"
+    home = true
+
+    [[params.navlinks]]
+    name = "About"
+    url = "about/"
+
+    [[params.navlinks]]
+    name = "Get in touch"
+    url = "contact/"
+
+    [[params.navlinks]]
+    name = "Blog"
+    url = "posts/"
