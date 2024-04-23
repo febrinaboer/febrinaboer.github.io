@@ -1,61 +1,74 @@
 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-    {{ partial "mobile_nav_toggle.html" . }}
-    <div class="grid">
-        <div class="row">
-          {{ range .Data.Pages }}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                  <div class="box-masonry">
-                      {{ if and (isset .Params "image") .Params.image }}
-                        {{ if eq .Params.showonlyimage true }}
-                        <!-- Basically if we want to redirect visitor to the image's link
+  {{ partial "mobile_nav_toggle.html" . }}
+  <div class="grid">
+    <div class="row">
+      {{ range .Data.Pages }}
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item page-item">
+        <div class="box-masonry">
+          {{ if and (isset .Params "image") .Params.image }}
+          {{ if eq .Params.showonlyimage true }}
+          <!-- Basically if we want to redirect visitor to the image's link
                         on Instagram or somewhere else, siteowner needs to put "redirect = true"
                         and "linkredirect = '<link>'" on the page's param.
                         -->
-                          {{ if eq .Params.redirect true}}
-                          <a href="{{ .Params.linkredirect }}" title="" class="box-masonry-image with-hover-overlay">
-                          {{ else }}
-                          <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
-                          {{ end }}
-                        {{ else }}
-                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                        {{ end }}
-                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
-                        </a>
-                      {{ end }}
-                      {{ if eq .Params.redirect true }}
-                        <div class="box-masonry-hover-text-header">
-                          <h4><a href="{{ .Params.linkredirect }}">{{ .Title }}</a></h4>
-                          <div class="box-masonry-description">
-                            <p>
-                                {{ if .Description }}
-                                  {{ .Description }}
-                                {{ else }}
-                                  {{ .Summary }}
-                                {{ end }}
-                            </p>
-                          </div>
-                        </div>
-                      {{ else }}
-                        {{ if eq .Params.showonlyimage true }}
-                        <div class="box-masonry-hover-text-header">
-                        {{ else }}
-                        <div class="box-masonry-text">
-                        {{ end }}
-                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                            <div class="box-masonry-description">
-                              <p>
-                                  {{ if .Description }}
-                                    {{ .Description }}
-                                  {{ else }}
-                                    {{ .Summary }}
-                                  {{ end }}
-                              </p>
-                            </div>
-                        </div>
-                      {{ end }}
-                  </div>
+          {{ if eq .Params.redirect true}}
+          <a href="{{ .Params.linkredirect }}" title="" class="box-masonry-image with-hover-overlay">
+            {{ else }}
+            <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+              {{ end }}
+              {{ else }}
+              <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                {{ end }}
+                <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+              </a>
+              {{ end }}
+              {{ if eq .Params.redirect true }}
+              <div class="box-masonry-hover-text-header">
+                <h4><a href="{{ .Params.linkredirect }}">{{ .Title }}</a></h4>
+                <div class="box-masonry-description">
+                  <p>
+                    {{ if .Description }}
+                    {{ .Description }}
+                    {{ else }}
+                    {{ .Summary }}
+                    {{ end }}
+                  </p>
+                </div>
               </div>
-          {{ end }}
+              {{ else }}
+              {{ if eq .Params.showonlyimage true }}
+              <div class="box-masonry-hover-text-header">
+                {{ else }}
+                <div class="box-masonry-text">
+                  {{ end }}
+                  <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                  <div class="box-masonry-description">
+                    <p>
+                      {{ if .Description }}
+                      {{ .Description }}
+                      {{ else }}
+                      {{ .Summary }}
+                      {{ end }}
+                    </p>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
         </div>
+        {{ end }}
+      </div>
     </div>
-</div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var container = document.querySelector('.grid .row');
+      var items = Array.from(container.children);
+
+      while (items.length > 0) {
+        var index = Math.floor(Math.random() * items.length);
+        container.appendChild(items.splice(index, 1)[0]);
+      }
+    });
+
+  </script>

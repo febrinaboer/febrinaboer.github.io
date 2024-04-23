@@ -1,0 +1,58 @@
+<script>
+    const pages = {{.Data.Pages | jsonify }};
+    const shuffledPages = pages.sort(() => Math.random() - 0.5);
+    const html = '';
+    shuffledPages.forEach((page) => {
+      html += `
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+          <div class="box-masonry">
+            {{ if page.Params.image }}
+              {{ if eq page.Params.showonlyimage true }}
+                {{ if eq page.Params.redirect true }}
+                  <a href="{{ page.Params.linkredirect }}" title="" class="box-masonry-image with-hover-overlay">
+                {{ else }}
+                  <a href="{{ page.Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+                {{ end }}
+              {{ else }}
+                <a href="{{ page.Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+              {{ end }}
+                <img src="{{ page.Params.image | absURL }}" alt="" class="img-responsive">
+              </a>
+            {{ end }}
+            {{ if eq page.Params.redirect true }}
+              <div class="box-masonry-hover-text-header">
+                <h4><a href="{{ page.Params.linkredirect }}">{{ page.Title }}</a></h4>
+                <div class="box-masonry-description">
+                  <p>
+                    {{ if page.Description }}
+                      {{ page.Description }}
+                    {{ else }}
+                      {{ page.Summary }}
+                    {{ end }}
+                  </p>
+                </div>
+              </div>
+            {{ else }}
+              {{ if eq page.Params.showonlyimage true }}
+                <div class="box-masonry-hover-text-header">
+              {{ else }}
+                <div class="box-masonry-text">
+              {{ end }}
+                <h4><a href="{{ page.Permalink }}">{{ page.Title }}</a></h4>
+                <div class="box-masonry-description">
+                  <p>
+                    {{ if page.Description }}
+                      {{ page.Description }}
+                    {{ else }}
+                      {{ page.Summary }}
+                    {{ end }}
+                  </p>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      `;
+    });
+    document.getElementById('page-list').innerHTML = html;
+  </script>
