@@ -1,21 +1,34 @@
++++ 
+date = "2016-11-05T21:05:33+05:30" 
+title = "About"
 +++
-date = "2016-11-05T21:05:33+05:30"
-title = "About me"
-+++
 
-An sincerity so extremity he additions. Her yet **there truth merit**. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
+![boo][1]
 
-Received overcame oh sensible so at an. Formed do change merely to county it. **Am separate contempt** domestic to to oh. On relation my so addition branched. Put hearing cottage she norland letters equally prepare too. Replied exposed savings he no viewing as up. Soon body add him hill. No father living really people estate if. Mistake do produce beloved demesne if am pursuit.
+<img src="/img/about.jpg" />
 
-![This is me][1]
+Hi, I am Febrina! I’m an independent artist/illustrator based in Luxembourg!
 
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+While taking a break right after finishing my study, I began pursuing art by
+creating digital illustrations. Then, on October 2021, I decided to start
+posting my art on Instagram. It was apparently one of the best decisions I’ve
+ever made, for it pushed me to continue making art, learning more skills, and
+getting myself some new, precious friends from among fellow artists.
 
-#### Education
+Recently, I also started doing some commissions for custom portrait
+illustrations. You can actually check out the details here and here!
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Aliquam tincidunt mauris eu risus.
+Cute, warm, and cozy are three things to describe my work. As I said previously,
+as a new artist, I am still improving my skills. I’m dreaming and working hard
+right now to have a real, proper art studio and cozy working space for myself
+where I can create and design cute illustrations and products in the future. And
+speaking about dreams, one of my biggest dreams is to open my own art shop where
+I can sell my artwork directly—and it has started now! Check the currently
+available works to purchase on the Shop section of this website to see them!
 
-When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+When I am not drawing, I usually read books (currently into Murakami’s novels)
+or learn new languages (日本語を勉強しています).
+
+If you have any questions, please contact me at: me@fibinastudio.com
 
 [1]: /img/about.jpg
