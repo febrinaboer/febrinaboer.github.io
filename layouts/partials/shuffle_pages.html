@@ -1,5 +1,5 @@
 <script>
-    const pages = {{.Data.Pages | jsonify }};
+    const pages = '{{.Data.Pages | jsonify }}';
     const shuffledPages = pages.sort(() => Math.random() - 0.5);
     const html = '';
     shuffledPages.forEach((page) => {
