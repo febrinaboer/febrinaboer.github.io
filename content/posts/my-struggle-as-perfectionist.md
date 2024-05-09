@@ -2,7 +2,7 @@
 title = 'My struggle as a perfectionist and my strategies for overcoming overthinking and inner critics'
 date = 2023-01-15
 draft = true
-description = "In which I explore my personal challenges with perfectionism, detailing my efforts to combat overthinking and silence my internal critics, as part of a broader commitment to improve my writing and self-expression in the new year"
+description = "In which I explore my personal challenges with perfectionism, detailing my efforts to combat overthinking and silence my internal critics, as part of a broader commitment to improve my writing and self-expression in the new year."
 image = "img/posts/my-struggle-perfectionists/img01.jpg"
 +++
 

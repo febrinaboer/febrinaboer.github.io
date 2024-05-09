@@ -21,10 +21,7 @@ illustrations. You can actually check out the details here and here!
 Cute, warm, and cozy are three things to describe my work. As I said previously,
 as a new artist, I am still improving my skills. I’m dreaming and working hard
 right now to have a real, proper art studio and cozy working space for myself
-where I can create and design cute illustrations and products in the future. And
-speaking about dreams, one of my biggest dreams is to open my own art shop where
-I can sell my artwork directly—and it has started now! Check the currently
-available works to purchase on the Shop section of this website to see them!
+where I can create and design cute illustrations and products in the future.
 
 When I am not drawing, I usually read books (currently into Murakami’s novels)
 or learn new languages (日本語を勉強しています).
