@@ -1,6 +1,7 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'Febrina Boer'
+publishDir = 'site'
 theme = 'hugo-creative-portfolio-theme'
 
 [params]
