@@ -1,7 +1,6 @@
 +++
 title = 'Let it Flow: The Art of Finding Joy in What We Do'
 date = 2023-02-22
-draft = true
 image = "img/posts/let-it-flow/ikigai-the-book-header.jpg"
 description = 'Recently, I explored the Japanese concept of "Ikigai" and "Flow" in the book "Ikigai: The Japanese Secret to a Long and Happy Life," highlighting the joy in finding purpose and fully engaging in our passions for optimal experiences and happiness.'
 +++
