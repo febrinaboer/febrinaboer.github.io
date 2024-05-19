@@ -1,5 +1,18 @@
 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
     {{ partial "mobile_nav_toggle.html" . }}
+    {{ if in .Permalink "fibinastudio" }}
+    <div class="fibina-studio-header">
+        <div class="fibina-studio-title-author">
+            <div class="fibina-studio-title">
+                <h1>fibinastudio</h1>
+            </div>
+            <div class="fibina-studio-author">
+                by Febrina Boer
+            </div>
+        </div>
+        <div class="fibina-studio-subtitle">Cute and Cozy Illustrations</div>
+    </div>
+    {{ end }}
     <div class="grid">
         <div class="row shuffle-container">
             {{ range .Data.Pages }}
@@ -60,44 +73,3 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var shuffleContainer = document.querySelector(".shuffle-container");
-
-            // Temporarily remove the shuffleContainer from the DOM
-            var parent = shuffleContainer.parentNode;
-            var nextSibling = shuffleContainer.nextSibling; // Save the next sibling for reinsertion at the same position
-            parent.removeChild(shuffleContainer);
-            console.log("Detaching");
-
-            // Convert HTMLCollection to an array to shuffle
-            var items = Array.from(shuffleContainer.children);
-            console.log(items);
-
-            // Shuffle the array of children
-            for (var i = items.length - 1; i > 0; i--) {
-                var j = Math.floor(Math.random() * (i + 1));
-                var temp = items[i];
-                items[i] = items[j];
-                items[j] = temp;
-            }
-
-            console.log(items);
-
-            // Clear the shuffleContainer and append the shuffled items
-            shuffleContainer.innerHTML = '';
-            items.forEach(function (item) {
-                shuffleContainer.appendChild(item);
-            });
-
-            // Reattach the shuffleContainer to the DOM in its original position
-            if (nextSibling) {
-                parent.insertBefore(shuffleContainer, nextSibling);
-            } else {
-                parent.appendChild(shuffleContainer);
-            }
-
-            console.log("Reattach");
-        });
-    </script>
