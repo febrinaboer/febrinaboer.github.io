@@ -5,8 +5,6 @@ title = "About"
 
 ![boo][1]
 
-<img src="/img/about.jpg" />
-
 Hi, I am Febrina! I’m an independent artist/illustrator based in Luxembourg!
 
 While taking a break right after finishing my study, I began pursuing art by
