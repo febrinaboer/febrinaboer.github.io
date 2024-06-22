@@ -180,7 +180,7 @@ button i.fa {
 .btn-ghost.active,
 .open .dropdown-toggle.btn-ghost {
   color: #ab8a59;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   border-color: #ea1a5d;
 }
 
@@ -395,7 +395,7 @@ SIDEBAR + RIGHT COLUMN
 }
 
 .sidebar-heading a {
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -404,7 +404,7 @@ SIDEBAR + RIGHT COLUMN
 
 .sidebar-heading a:hover {
   border-bottom: dotted 1px #ab8a59;
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
 }
 
@@ -567,7 +567,7 @@ div.fibina-studio-subtitle {
 }
 
 .small-navbar-heading a {
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -576,7 +576,7 @@ div.fibina-studio-subtitle {
 
 .small-navbar-heading a:hover {
   border-bottom: dotted 1px #ab8a59;
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
 }
 
@@ -1052,7 +1052,7 @@ a:active {
 
 .box-masonry h4 a:hover {
   border-bottom: dotted 1px #000;
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
 }
 
@@ -1899,11 +1899,11 @@ STYLE SWITCHER FOR DEMO
   color: #555555;
 }
 
-.dropdown-menu>li>a:hover,
+/* .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
   color: #262626;
   background-color: #f5f5f5;
-}
+} */
 
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:hover,

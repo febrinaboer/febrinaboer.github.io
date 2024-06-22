@@ -27,4 +27,4 @@ or learn new languages (日本語を勉強しています).
 
 If you have any questions, please contact me at: me@fibinastudio.com
 
-[1]: /img/about.jpg
+[1]: /img/about.png
